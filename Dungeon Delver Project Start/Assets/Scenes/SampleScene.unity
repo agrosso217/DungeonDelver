@@ -693,10 +693,14 @@ MonoBehaviour:
   attackDelay: 0.5
   transitionDelay: 0.5
   maxHealth: 10
+  knockbackSpeed: 10
+  knockbackDuration: 0.25
+  invincibleDuration: 0.5
   dirHeld: -1
   facing: 1
   mode: 0
   numKeys: 0
+  invincible: 0
   _health: 0
 --- !u!135 &487711566
 SphereCollider:
@@ -881,6 +885,7 @@ GameObject:
   - component: {fileID: 717467497}
   - component: {fileID: 717467499}
   - component: {fileID: 717467498}
+  - component: {fileID: 717467500}
   m_Layer: 0
   m_Name: Sword
   m_TagString: Untagged
@@ -963,6 +968,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &717467500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 717467496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8fbd51151a89b940b0c37c8076cba7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 2
+  knockback: 1
 --- !u!1 &756117401 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1000013282365372, guid: ef2195d4d1bab4df9ad6dc73b0faebb1,
@@ -1001,6 +1020,7 @@ GameObject:
   - component: {fileID: 792924051}
   - component: {fileID: 792924052}
   - component: {fileID: 792924053}
+  - component: {fileID: 792924054}
   m_Layer: 0
   m_Name: Skeletos
   m_TagString: Untagged
@@ -1130,8 +1150,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0f53d7ed90fbcd4badf0c3c2146de86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 1
+  maxHealth: 4
+  knockbackSpeed: 10
+  knockbackDuration: 0.25
+  invincibleDuration: 0.5
   health: 0
+  invincible: 0
+  knockback: 0
   speed: 2
   timeThinkMin: 1
   timeThinkMax: 4
@@ -1163,6 +1188,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33ceff80f13262e4dbb629d4ebc721e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &792924054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 792924045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8fbd51151a89b940b0c37c8076cba7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
+  knockback: 1
 --- !u!1 &1514895958
 GameObject:
   m_ObjectHideFlags: 0
