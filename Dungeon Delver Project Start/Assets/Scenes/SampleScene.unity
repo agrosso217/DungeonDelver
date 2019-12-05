@@ -195,6 +195,8 @@ GameObject:
   - component: {fileID: 487711564}
   - component: {fileID: 487711565}
   - component: {fileID: 487711566}
+  - component: {fileID: 487711567}
+  - component: {fileID: 487711568}
   m_Layer: 0
   m_Name: Dray
   m_TagString: Untagged
@@ -315,6 +317,7 @@ MonoBehaviour:
   speed: 5
   attackDuration: 0.25
   attackDelay: 0.5
+  transitionDelay: 0.5
   dirHeld: -1
   facing: 1
   mode: 0
@@ -331,6 +334,32 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.4
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &487711567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 487711560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ea0065ab8b5bde45bec124e255a640c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keepInRoom: 0
+  gridMult: 0.5
+--- !u!114 &487711568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 487711560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33ceff80f13262e4dbb629d4ebc721e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &534669902
 GameObject:
   m_ObjectHideFlags: 0
@@ -530,6 +559,7 @@ GameObject:
   - component: {fileID: 792924046}
   - component: {fileID: 792924051}
   - component: {fileID: 792924052}
+  - component: {fileID: 792924053}
   m_Layer: 0
   m_Name: Skeletos
   m_TagString: Untagged
@@ -680,6 +710,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   keepInRoom: 1
   gridMult: 1
+--- !u!114 &792924053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 792924045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33ceff80f13262e4dbb629d4ebc721e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1514895958
 GameObject:
   m_ObjectHideFlags: 0
